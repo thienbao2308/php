@@ -44,7 +44,7 @@
         <li><a href="">Về Chúng tôi</a></li>
         <li><a href="">Menu</a></li>
         <li><a href="">Liên Hệ</a></li>
-        <li><a href="">Đánh Giá</a></li>   
+        <li><a href="">Đánh Giáa</a></li>   
     </div>
     <div class="hello">
         <h1></h1>
