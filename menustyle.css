@@ -22,7 +22,7 @@
         display: flex;
         text-align: center;
         justify-content: center;
-        align-items: center;
+       
      }
      header::before{
         position:absolute;
@@ -30,7 +30,7 @@
         height: 100%;
         content: "";
         display: block;
-        background: rgba(0, 0, 0, 0.5);
+        
 
      }
      header input{

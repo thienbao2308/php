@@ -160,3 +160,18 @@
         opacity: 0.4;
     }
 }
+.product_list ul
+{
+   text-decoration: none;
+   list-style: none;
+}
+.product_list li
+{
+   text-decoration: none;
+   list-style: none;
+}
+.product_list a
+{
+   text-decoration: none;
+   list-style: none;
+}

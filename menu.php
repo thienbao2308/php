@@ -40,7 +40,13 @@
     <li>
         <a href="#">
             <img src="upload/<?php echo $row_ad['hinhanh']?>">
-    </li>   
+            <p>tên:<?php echo $row_ad['tensanpham'] ?></p>
+            <h2>Mã :<?php echo $row_ad['masp']?></h2>
+            <h1>Giá sp:<?php echo $row_ad['giasp']?></h1>
+            <img src="upload/<?php echo $row_ad['hinhanh']?>">
+            <h1>nội dung <?php echo $row_ad['noidung']?></h1>
+
+        </li> 
     <?php
 }
 ?>
