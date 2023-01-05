@@ -47,7 +47,7 @@
                     while($row=mysqli_fetch_array($query_lietke_sanpham))
                     {
                         $i++;
-                    }
+                    
                     ?>
                     <tr>
             <td><?php echo $i?></td>
@@ -58,6 +58,9 @@
             <td>miêu tả <?php echo $row['noidung']?></td>
             
                     </tr>
+                    <?php 
+                    }
+                    ?>
  </header>
 </body>
 </html>
