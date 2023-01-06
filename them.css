@@ -1,0 +1,35 @@
+table {
+    margin-top: 20px;
+    border-spacing: 0px;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(235, 154, 156);
+    
+}
+table tr{
+    width: 200px;
+    height: 150px;
+}
+table td{
+    text-align: center;
+    
+}
+table td .cuoi{
+    font-size: large;
+}
+input[type=submit]{
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+#cuoi{
+    color: red;
+    background: transparent;
+    border:2px solid red;
+}

@@ -1,5 +1,6 @@
 <html>
     <head>
+    </head>
     <?php
     include 'C:\xampp\htdocs\php\config.php';   
     $sql_lietke_sp="SELECT * FROM tbl_sanpham ";
@@ -25,7 +26,13 @@
         <li><a href="">Liên Hệ</a></li>
         <li><a href="">Đánh Giá</a></li>   
     </div>
-    <div id="main">
+    
+ </header>
+ <body style="        background:url(images/thumb1-1200x676-28.jpg);
+ background-size: cover;
+        background-repeat: no-repeat;        background-position: center;
+">
+ <div id="main">
         <h1 id="ha">Sản Phẩm</h1>
         <div class="but">
             <button type="button" onclick="location.href='them.php';" class="csw-btn-buttonThem" >Thêm</button>
@@ -41,6 +48,7 @@
                         <th>giá món ăn</th>
                         <th>Hình Ảnh</th>
                         <th>Miêu Tả</th>
+                        <th>Quản lý</th>
                     </tr>
                     <?php
                     $i=0;
@@ -51,17 +59,19 @@
                     ?>
                     <tr>
             <td><?php echo $i?></td>
-            <td>tên:<?php echo $row['tensanpham'] ?></td>
-            <td>Mã :<?php echo $row['masp']?></td>
-            <td>Giá sp:<?php echo $row['giasp']?></td>
-            <td>hình ảnh<img src="upload/<?php echo $row['hinhanh']?>"></td>
-            <td>miêu tả <?php echo $row['noidung']?></td>
-            
+            <td><?php echo $row['tensanpham'] ?></td>
+            <td> :<?php echo $row['masp']?></td>
+            <td>:<?php echo $row['giasp']?></td>
+            <td><img src="upload/<?php echo $row['hinhanh']?>"width="150px"></td>
+            <td> <?php echo $row['noidung']?></td>
+            <td>
+                            <a href="sua.php?id=<?php echo $row['id']?>">Sửa</a>
+                            <a onclick="return Del('<?php echo $row['tensanpham'];?>')" href="xuLy.php?id=<?php echo $row['id']?>">Xóa</a>
+            </td>
                     </tr>
                     <?php 
                     }
                     ?>
- </header>
 </body>
 </html>
    
