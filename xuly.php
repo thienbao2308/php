@@ -12,6 +12,11 @@ $noidung=$_POST['noidung'];
 if(isset($_POST['them'])){
     $sql_them="INSERT INTO tbl_sanpham(tensanpham,masp,giasp,hinhanh,noidung)
      VALUE('".$tenloaisp."','".$masanpham."','".$giasp."','".$hinhanh."','".$noidung."')";
+      if (empty($tenloaisp) || empty($masanpham) || empty($giasp) ||empty($noidung)) {
+        header('Location:lietke.php');
+        return false;
+        echo '<script> alert("vui lòng nhập lại");</script>';
+    }
      mysqli_query($conn,$sql_them);
      move_uploaded_file($hinhanh_tmp,'upload/'.$hinhanh);
      header('Location:lietke.php');
